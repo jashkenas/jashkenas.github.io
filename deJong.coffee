@@ -16,7 +16,7 @@ start = 0
 limit = 200
 
 # Size of the canvas in dimensional and then real pixels.
-size = Math.round(document.width - (document.width * 0.3))
+size = Math.round(document.body.clientWidth - (document.body.clientWidth * 0.3))
 N = size * (window.devicePixelRatio or 1)
 
 # Create the `canvas` element and grab its drawing `context`.
@@ -125,7 +125,7 @@ class DeJongAttractor
   reseed: ->
     @clear()
     @seed()
-    @plot 1
+    @plot 3
 
   # Soft light color blend between two brighness values.
   softLight: (a, b) ->
