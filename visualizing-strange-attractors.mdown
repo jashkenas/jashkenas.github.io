@@ -1,0 +1,10 @@
+### Visualizing Strange Attractors
+
+
+
+http://en.wikipedia.org/wiki/Attractor
+http://thor.abekat.net/2009/peter-de-jong-attractor-redux/
+http://www.complexification.net/gallery/machines/peterdejong/
+http://nodebox.net/code/index.php/shared_2008-02-29-18-05-38
+http://demonstrations.wolfram.com/PeterDeJongAttractors/
+http://local.wasp.uwa.edu.au/~pbourke/fractals/peterdejong/

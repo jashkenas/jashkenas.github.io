@@ -1,0 +1,2 @@
+x: sin(a * y) - cos(b * x)
+y: sin(c * x) - cos(d * y)
