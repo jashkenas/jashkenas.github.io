@@ -49,14 +49,14 @@
       <div id="newgame"></div>
       <div class="explanation">
         This is a simple demonstration of <a href="https://beta.observablehq.com/@jashkenas/downloading-and-embedding-notebooks">embedding
-        Observable notebooks</a>. Here’s the <a href="https://beta.observablehq.com/@jashkenas/breakout">original
+        Observable notebooks</a>. It pulls the game code live from the <a href="https://beta.observablehq.com/@jashkenas/breakout">original
         notebook source</a>.
       </div>
     </div>
 
     <script type="module">
       import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.0.1?module";
-      import notebook from "./breakout.js";
+      import notebook from "https://api.observablehq.com/@jashkenas/breakout.js?key=a1c505cd06bba653";
       const renders = {
         "viewof c": "#game",
         "score": "#score",
