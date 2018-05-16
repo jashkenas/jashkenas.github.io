@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Breakout! (Embedded Observable notebook)</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        background: #000;
+        color: #fff;
+        font-family: 'Press Start 2P', cursive;
+      }
+      #game {
+        margin: 50px 0;
+      }
+      .wrapper {
+        text-align: center;
+        margin: 200px auto;
+      }
+      .score {
+        margin: 15px 0;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">BREAKOUT</div>
+      <div id="game"></div>
+      <div class="score">
+        Your High Score: <span id="highscore"></span>
+      </div>
+      <div class="score">
+        Score: <span id="score"></span>
+      </div>
+      <div id="newgame"></div>
+    </div>
+
+    <script type="module">
+      import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.0.1?module";
+      import notebook from "./breakout.js";
+      const renders = {
+        "viewof c": "#game",
+        "score": "#score",
+        "highscore": "#highscore",
+        "viewof newgame": "#newgame"
+      };
+      Runtime.load(notebook, (variable) => {
+        const selector = renders[variable.name];
+        if (selector) {
+          return new Inspector(document.querySelector(selector));
+        } else {
+          return true;
+        }
+      });
+    </script>
+  </body>
+</html>

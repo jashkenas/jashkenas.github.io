@@ -1,0 +1,9 @@
+{
+  "name": "breakout",
+  "main": "breakout.js",
+  "version": "1006.0.0",
+  "author": {
+    "name": "Jeremy Ashkenas",
+    "url": "https://beta.observablehq.com/@jashkenas"
+  }
+}
