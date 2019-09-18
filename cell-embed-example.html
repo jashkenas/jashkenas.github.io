@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Breakout! (Embedded Observable notebook)</title>
+  </head>
+  <body>
+    <h1>Observable Embedded Cell Example</h1>
+    <p>From: <a href="https://observablehq.com/@observablehq/downloading-and-embedding-notebooks">Downloading and Embedding Notebooks</a>.</p>
+    <br><br>
+    <div id="observablehq-6da5969b"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@observablehq/downloading-and-embedding-notebooks.js?v=3";
+const inspect = Inspector.into("#observablehq-6da5969b");
+(new Runtime).module(define, name => (name === "graphic") && inspect());
+</script>
+  </body>
+</html>
